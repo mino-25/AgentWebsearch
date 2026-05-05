@@ -10,7 +10,7 @@ async function getIndexInfo() {
     }
   );
 
-  if (!response.ok) {
+  if (!response.ok) { 
     const err = await response.text();
     throw new Error(`Erreur Pinecone : ${response.status} — ${err}`);
   }
